@@ -26,6 +26,8 @@ body{
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 2;
+    display: grid;
+    grid-template-rows: 70px 1fr;
 }
 .content{
     background-color: darkgrey;
@@ -35,7 +37,7 @@ body{
     grid-row-end: 6;
 }
 
-.content,.top-header,.bottom-header{
+.content,.bottom-header, .account-setting{
     border: 1px solid red;
 }
 
@@ -81,4 +83,34 @@ a{
     justify-content: start;
     color: white;
     text-decoration: none;
+}
+
+.top-header{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.search-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 50px;
+}
+
+button{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #f0f9ff;
+}
+
+
+#search{
+    padding-left: 20px;
+    width: 600px;
+    height: 30px;
+    border: none;
+    background-color: #e2e8f0;
+    border-radius: 20px;
+    margin-left: 20px;
 }
