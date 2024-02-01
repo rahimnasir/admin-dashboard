@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto-Medium.ttf);
+}
+body{
+    display: grid;
+    grid-template-columns: 300px 3fr;
+    grid-template-rows: 170px 5fr;
+    height: 100vh;
+}
+.sidebar{
+    background-color: #38bdf8;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+.header{
+    background-color: #f0f9ff;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.content{
+    background-color: darkgrey;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 6;
+}
+
+.content,.top-header,.bottom-header{
+    border: 1px solid red;
+}
+
+.title,.main-selection, .secondary-selection{
+    font-family: 'Roboto', sans-serif;
+}
+
+.title{
+    font-size: 2em;
+}
+
+.main-selection, .secondary-selection{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.5em;
+    padding-left: 10px;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.large-icon{
+    padding-right: 10px;
+    fill: white;
+    width: 50px;
+    height: 50px;
+}
+
+.small-icon{
+    padding-right: 20px;
+    fill: white;
+    width: 30px;
+    height: 30px;
+}
+a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    color: white;
+    text-decoration: none;
+}
