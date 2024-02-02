@@ -36,7 +36,7 @@ body{
     grid-row-start: 2;
     grid-row-end: 6;
 }
-.content,.bottom-header,.profile-info,.buttons{
+.content{
     border: 1px solid red;
 }
 .title{
@@ -113,10 +113,54 @@ button{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 30px;
+    padding-right: 30px;
 }
 .username{
     font-size: 1.3em;
 }
 
+.bottom-header{
+    display: grid;
+    grid-template-columns: 1fr 450px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.buttons .edit-button{
+    background-color: #38bdf8;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.1em;
+}
+
+.profile-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    padding-left: 60px;
+}
+.main-profile-picture{
+    width: 70px;
+    height: 70px;
+}
+
+.text-profile{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.text-user{
+    font-size: 1.5em;
+}
