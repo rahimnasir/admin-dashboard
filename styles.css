@@ -36,9 +36,6 @@ body{
     grid-row-start: 2;
     grid-row-end: 6;
 }
-.content{
-    border: 1px solid red;
-}
 .title{
     font-size: 2em;
 }
@@ -160,3 +157,34 @@ button{
     font-size: 1.5em;
 }
 
+.content{
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.content div{
+    border: 1px solid red;
+}
+
+.projects{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+}
+
+.projects div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    height: 100%;
+}
+
+.projects div .project-card{
+    background-color: white;
+    width: 50%;
+    height: 33%;
+    border: 1px solid green;
+}
