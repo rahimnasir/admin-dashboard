@@ -1,11 +1,11 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
 @font-face {
     font-family: Roboto;
     src: url(fonts/Roboto-Medium.ttf);
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 body{
     display: grid;
@@ -36,19 +36,12 @@ body{
     grid-row-start: 2;
     grid-row-end: 6;
 }
-
-.content,.bottom-header, .account-setting{
+.content,.bottom-header,.profile-info,.buttons{
     border: 1px solid red;
 }
-
-.title,.main-selection, .secondary-selection{
-    font-family: 'Roboto', sans-serif;
-}
-
 .title{
     font-size: 2em;
 }
-
 .main-selection, .secondary-selection{
     display: flex;
     flex-direction: column;
@@ -69,7 +62,6 @@ body{
     width: 50px;
     height: 50px;
 }
-
 .small-icon{
     padding-right: 20px;
     fill: white;
@@ -84,27 +76,22 @@ a{
     color: white;
     text-decoration: none;
 }
-
 .top-header{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 400px;
 }
-
 .search-bar{
     display: flex;
     flex-direction: row;
     align-items: center;
     padding-left: 50px;
 }
-
 button{
     width: 30px;
     height: 30px;
     border: none;
     background-color: #f0f9ff;
 }
-
-
 #search{
     padding-left: 20px;
     width: 600px;
@@ -114,3 +101,22 @@ button{
     border-radius: 20px;
     margin-left: 20px;
 }
+.notify{
+    width: 30px;
+    height: 30px;
+}
+.profile-picture{
+    width: 45px;
+    height: 45px;
+}
+.account-setting{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.username{
+    font-size: 1.3em;
+}
+
