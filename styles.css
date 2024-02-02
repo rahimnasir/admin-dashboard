@@ -120,12 +120,10 @@ button{
 .username{
     font-size: 1.3em;
 }
-
 .bottom-header{
     display: grid;
     grid-template-columns: 1fr 450px;
 }
-
 .buttons{
     display: flex;
     flex-direction: row;
@@ -141,7 +139,6 @@ button{
     color: white;
     font-size: 1.1em;
 }
-
 .profile-info{
     display: flex;
     flex-direction: row;
@@ -154,13 +151,12 @@ button{
     width: 70px;
     height: 70px;
 }
-
 .text-profile{
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
-
 .text-user{
     font-size: 1.5em;
 }
+
