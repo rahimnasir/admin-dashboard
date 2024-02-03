@@ -202,7 +202,6 @@ button{
 .project-collection{
     height: 90%;
 }
-
 .list-announce{
     height: 90%;
     border-radius: 10px;
@@ -211,14 +210,33 @@ button{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3,1fr);
 }
-
 .announce{
     padding: 10px;
 }
-
 .announce-second{
     padding: 10px;
     border-bottom: 1px solid #919191;
 
     border-top: 1px solid #919191;
+}
+
+.trending{
+    display: flex;
+    flex-direction: column;
+}
+.trending-account{
+    height: 90%;
+    border-radius: 10px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+}
+
+.account{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+    gap: 20px;
 }
