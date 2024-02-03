@@ -30,11 +30,16 @@ body{
     grid-template-rows: 70px 1fr;
 }
 .content{
-    background-color: darkgrey;
+    background-color: #cbd5e1;
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 6;
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px;
+    padding: 20px;
 }
 .title{
     font-size: 2em;
@@ -156,35 +161,64 @@ button{
 .text-user{
     font-size: 1.5em;
 }
-
-.content{
-    display: grid;
-    grid-template-columns: 1fr 350px;
-    grid-template-rows: repeat(2,1fr);
-    gap: 20px;
-    padding: 20px;
-}
-.content div{
-    border: 1px solid red;
-}
-
 .projects{
     grid-column-start: 1;
     grid-row-start: 1;
     grid-row-end: 3;
 
 }
-
-.projects div{
+.projects > div{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(3,1fr);
-    height: 100%;
+    gap: 20px;
+}
+.projects > div > .project-card{
+    padding: 25px 20px;
+    background-color: white;
+    border-radius: 10px;
+    border-left: 10px solid orange;
+    display: flex;
+    flex-direction: column;
+}
+.content-title{
+    padding: 10px;
+}
+.project-title{
+    font-size: 1.2em;
+    padding-bottom: 2px;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: end;
+    gap: 20px;
+}
+.project-icons{
+    width: 25px;
+    height: 25px;
+}
+.project-collection{
+    height: 90%;
 }
 
-.projects div .project-card{
+.list-announce{
+    height: 90%;
+    border-radius: 10px;
     background-color: white;
-    width: 50%;
-    height: 33%;
-    border: 1px solid green;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+}
+
+.announce{
+    padding: 10px;
+}
+
+.announce-second{
+    padding: 10px;
+    border-bottom: 1px solid #919191;
+
+    border-top: 1px solid #919191;
 }
